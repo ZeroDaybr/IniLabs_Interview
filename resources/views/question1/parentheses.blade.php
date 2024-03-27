@@ -19,6 +19,7 @@
         <div class="row mt-5">
             <div class="col mt-5">
                 <h1 class="text-center">Question 1</h1>
+                <p style="text-align: justify">**Task 0: Valid Parentheses**</p>
                 <p style="text-align: justify">Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
                     An input string is valid if:
                     Open brackets must be closed by the same type of brackets.
