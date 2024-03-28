@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ParenthesesController;
 use App\Http\Controllers\ShapeController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\Todo\TaskController;
+use App\Http\Controllers\ParenthesesController;
+use App\Http\Controllers\Animal\AnimalController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,8 +23,12 @@ Route::post('/calculate-area', [ShapeController::class, 'calculateArea'])->name(
 Route::get('/employees', [EmployeeController::class, 'index']);
 Route::post('/employees/{employee}', [EmployeeController::class, 'update']);
 
+//Animal
+Route::get('/polymorphism-demo', [AnimalController::class, 'polymorphismDemo']);
+
 // routes/web.php
 
-use App\Http\Controllers\Animal\AnimalController;
 
-Route::get('/polymorphism-demo', [AnimalController::class, 'polymorphismDemo']);
+
+Route::resource('tasks', TaskController::class);
+
