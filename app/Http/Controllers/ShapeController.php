@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
-use App\Models\Circle;
-use App\Models\Rectangle;
+use App\Models\Shape_Models\Circle;
+use App\Models\Shape_Models\Rectangle;
+
 
 class ShapeController extends Controller
 {

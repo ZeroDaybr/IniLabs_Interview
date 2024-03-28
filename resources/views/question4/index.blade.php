@@ -11,9 +11,19 @@
 
 <body>
     <div class="container mt-5">
+
+        <div class="row justify-content-center">
+            <div class="col">
+                <h1 class="text-center mb-2">Employees</h1>
+                <h2 class="text-center">Question 4</h2>
+                <p style="text-align: justify">**Task 3: Encapsulation**</p>
+                <p style="text-align: justify">Design a class to manage employee data, demonstrating encapsulation by setting and getting employee salaries securely.</p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col">
-                <h2 class="text-center mb-5">Employees</h2>
+
                 <table class="table table-striped">
                     <thead>
                         <tr>

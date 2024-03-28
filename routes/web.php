@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ParenthesesController;
 use App\Http\Controllers\ShapeController;
+use App\Http\Controllers\EmployeeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,9 +17,12 @@ Route::post('/validate-parentheses', [ParenthesesController::class, 'validatePar
 Route::get('/shape', [ShapeController::class, 'index']);
 Route::post('/calculate-area', [ShapeController::class, 'calculateArea'])->name('calculate.area');
 
-// routes/web.php
-
-use App\Http\Controllers\EmployeeController;
-
+// employees
 Route::get('/employees', [EmployeeController::class, 'index']);
 Route::post('/employees/{employee}', [EmployeeController::class, 'update']);
+
+// routes/web.php
+
+use App\Http\Controllers\Animal\AnimalController;
+
+Route::get('/polymorphism-demo', [AnimalController::class, 'polymorphismDemo']);
