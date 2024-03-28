@@ -16,4 +16,9 @@ Route::post('/validate-parentheses', [ParenthesesController::class, 'validatePar
 Route::get('/shape', [ShapeController::class, 'index']);
 Route::post('/calculate-area', [ShapeController::class, 'calculateArea'])->name('calculate.area');
 
+// routes/web.php
 
+use App\Http\Controllers\EmployeeController;
+
+Route::get('/employees', [EmployeeController::class, 'index']);
+Route::post('/employees/{employee}', [EmployeeController::class, 'update']);
