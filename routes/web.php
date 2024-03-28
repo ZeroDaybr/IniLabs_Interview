@@ -15,3 +15,5 @@ Route::post('/validate-parentheses', [ParenthesesController::class, 'validatePar
 //Shape
 Route::get('/shape', [ShapeController::class, 'index']);
 Route::post('/calculate-area', [ShapeController::class, 'calculateArea'])->name('calculate.area');
+
+
