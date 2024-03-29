@@ -1,13 +1,31 @@
 @extends('Layouts.master')
 
+@push('style')
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+@endpush
 @section('content')
-    <main class="flex-shrink-0" style="height: 80vh">
-        <div class="container">
-            <h1 class="mt-5">Sticky footer with fixed navbar</h1>
-            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A
-                fixed navbar has been added with <code class="small">padding-top: 60px;</code> on the <code
-                    class="small">main &gt; .container</code>.</p>
-            <p>Back to <a href="/docs/5.0/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+    <main class="flex-shrink-0" style="height: 84vh">
+        <div class="container center">
+            <h1 class="mt-5">About Me</h1>
+            <p class="lead">I'm a Computer Science Engineer from Daffodil International University, specializing in Laravel, HTML, CSS, and JavaScript.</p>
         </div>
     </main>
+
+</head>
+
 @endsection
